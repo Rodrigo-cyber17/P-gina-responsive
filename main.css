@@ -1,0 +1,181 @@
+/*Estilos para el "main"*/
+
+
+/*Aplica al "main"*/
+main{
+    /*Margen*/
+    margin: 0 10px;
+    /*Aplica/Muestra los elementos "flex"*/
+    flex-direction: column;
+    /*Texto centrado*/
+    justify-items: center;
+}
+/*Aplica a "info"*/
+.info{
+    /*Ancho*/
+    width: 100%;
+    /*Ancho máximo*/
+    max-width: 600px;
+    /*Margen*/
+    margin: 10px 0px;
+    /*Relleno*/
+    padding: 20px;
+    /*Texto centrado */
+    justify-items: center;
+}
+/*Aplica a los encabezados de "info"*/
+.info h1{
+    /*Color*/
+    color: #333;
+    /*Tamaño texto*/
+    font-size: 30px;
+    /*Margen*/
+    margin-bottom: 20px;
+    /*Tamaño ancho*/
+    font-weight: 400;
+    /*Margen*/
+    margin: 0 0 20px;
+    /*Tamaño de línea*/
+    line-height: 1.2;
+}
+/*Aplica a los párrafos de "info"*/
+.info p{
+    /*Color*/
+    color: #666;
+    /*Tamaño*/
+    font-size: 17px;
+    /*Tamaño de línea*/
+    line-height: 1.625;   
+    /*Margen*/
+    margin: 0 0 20px;
+    /*Texto centrado*/
+    text-align: center; 
+}
+/*Aplica a los enlaces de "info"*/
+.info a{
+    /*Color*/
+    color: white;
+    /*Color de fondo*/
+    background-color: #428BCA;
+    /*Elimina la decoración predeterminada*/
+    text-decoration: none;
+    /*Tamaño texto*/
+    font-size: 18px;
+    /*Tamaño ancho*/
+    font-weight: 600;
+    padding: 18px 50px;
+    margin: 30px;
+    border-radius: 30px;
+}
+/*Aplica a "destacados"*/
+.destacados{
+    /*Aplica/Muestra los elementos "grid"*/
+    display: grid;
+    /*Crear plantillas/"celdas" con "grid"*/
+    grid-template:
+    "cel1 cel2 cel3 cel4" 1fr; /*Altura de los "celdas*/
+    /*Margen*/
+    margin: 20px;
+    /*Ancho*/
+    width: 100%;
+    /*Mínimo de ancho*/
+    max-width: 1140px;
+    /*Relleno*/
+    padding: 20px;
+    /*Espacio entre columnas*/
+    column-gap: 30px;
+    /*Centra el contenido*/
+    justify-content: center;
+    /*Centra los navegadores*/
+    align-items: center;
+    /*Crea un espacio alrededor del contenido*/
+    justify-content: space-around;
+}
+/*Aplica a "destacado"*/
+.destacado{
+    /*Color*/
+    color: #428bca;
+    /*Tamaño texto*/
+    font-size: 17px;
+    /*Ancho*/
+    font-weight: 100%;
+    /*Tmaño ancho*/
+    font-weight: 400;
+    /*Tamaño de línea*/
+    line-height: 1.625;
+    /*Texto centrado*/
+    text-align: center;
+}
+/*Aplica a "tarjetas"*/
+.tarjetas{
+    /*Añade un ancho*/
+    width: 100%;
+    /*Añade una altura*/
+    max-width: 1140px;
+    /*Espacio entre celdas*/
+    gap: 30px;
+    /*Aplica/Muestra los elementos "grid"*/
+    display: grid;
+    /*Crear plantillas/"celdas" con "grid"*/
+    grid-template:
+        "cel1 cel2  cel3  cel4"       50px    /*Altura de los celdas (imagenes)*/
+        "cel5 cel6  cel7  cel8"       100px   /*Altura de los celdas (cabecera)*/
+        "cel9 cel10 cel11 cel12"      1fr /   /*Altura de los celdas (párrafos)*/
+        1fr   1fr   1fr   1fr;                /*Anchura de las celdas*/
+}
+/*Aplica a "tarjeta"*/
+.tarjeta{
+    /*Eliminar la decoración o estilo predeterminado*/
+    text-decoration: none;
+    /*Texto centrado*/
+    justify-items: center;
+    /*Altura*/
+    height: 400px;
+    /*Borde*/
+    border: 1px solid #e4e4e4;
+    /*Borde redondeado*/
+    border-radius: 5px;
+}
+/*Aplica animación al pasar el cursor por encima del contenido de "tarjeta"*/
+.tarjeta:hover{
+    /*Borde*/
+    border: 1px solid #408AC9;
+}
+/*Coge a todos los que tengan tarjeta de nombre en como "class"*/
+.tarjeta > *{
+    /*Relleno*/
+    padding: 15px;
+}
+/*Aplica a las imágenes de las trajetas*/
+.tarjeta img{
+    /*Altura*/
+    height: 140px;
+}
+/*Aplica a los encabezadosde de las tarjetas*/
+.tarjeta h3{
+    /*Altura mínima*/
+    min-height: 50px;
+    /*Color*/
+    color: #4489C8;
+    /*Tamaño texto*/
+    font-size: 20px;
+    /*Texto negrita*/
+    font-weight: bold;
+    /*Tamaño de línea*/
+    line-height: 1.2;
+    /*Texto centrado*/
+    text-align: center;
+}
+/*Aplica a los párrafos de las tarjetas*/
+.tarjeta p{
+    /*Color*/
+    color: #666666;
+    /*Tamaño texto*/
+    font-size: 14px;
+    /*Tamaño altura*/
+    font-weight: 400;
+    /*Tamaño de línea*/
+    line-height: 1.5;
+    /*Texto centrado*/
+    text-align: center;
+}
